@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>import java.io.File;<a name="line.1"></a>
+<span class="sourceLineNo">002</span>import java.io.FileNotFoundException;<a name="line.2"></a>
+<span class="sourceLineNo">003</span>import java.io.PrintWriter;<a name="line.3"></a>
+<span class="sourceLineNo">004</span>import java.util.ArrayList;<a name="line.4"></a>
+<span class="sourceLineNo">005</span>import java.util.Scanner;<a name="line.5"></a>
+<span class="sourceLineNo">006</span><a name="line.6"></a>
+<span class="sourceLineNo">007</span>/**<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * Created by star on 10/3/2015.<a name="line.8"></a>
+<span class="sourceLineNo">009</span> */<a name="line.9"></a>
+<span class="sourceLineNo">010</span>public class Stations {<a name="line.10"></a>
+<span class="sourceLineNo">011</span><a name="line.11"></a>
+<span class="sourceLineNo">012</span>    public ArrayList&lt;String&gt; staList = new ArrayList&lt;String&gt;();<a name="line.12"></a>
+<span class="sourceLineNo">013</span>    public ArrayList&lt;String&gt; staIndex = new ArrayList&lt;String&gt;();<a name="line.13"></a>
+<span class="sourceLineNo">014</span>    public PrintWriter pw;<a name="line.14"></a>
+<span class="sourceLineNo">015</span>    public boolean breakLoop = false;<a name="line.15"></a>
+<span class="sourceLineNo">016</span>    public String SID;<a name="line.16"></a>
+<span class="sourceLineNo">017</span><a name="line.17"></a>
+<span class="sourceLineNo">018</span><a name="line.18"></a>
+<span class="sourceLineNo">019</span>    /**<a name="line.19"></a>
+<span class="sourceLineNo">020</span>     * Will set up a scanner to read the file and add each station line into the arraylist staList as well as add just the station ID to arraylist staIndex<a name="line.20"></a>
+<span class="sourceLineNo">021</span>     * @param temp The input file pathway for the scanner to read the FBIN<a name="line.21"></a>
+<span class="sourceLineNo">022</span>     */<a name="line.22"></a>
+<span class="sourceLineNo">023</span>    public Stations(String temp) {<a name="line.23"></a>
+<span class="sourceLineNo">024</span>        String strFilePath = temp;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>        File textfile = new File(strFilePath);<a name="line.25"></a>
+<span class="sourceLineNo">026</span>        File outFile = new File("out\\FBOUT.txt");<a name="line.26"></a>
+<span class="sourceLineNo">027</span>        try {<a name="line.27"></a>
+<span class="sourceLineNo">028</span>            //makes a new printWriter<a name="line.28"></a>
+<span class="sourceLineNo">029</span>            pw = new PrintWriter(outFile);<a name="line.29"></a>
+<span class="sourceLineNo">030</span>            //makes a new var to count the loops<a name="line.30"></a>
+<span class="sourceLineNo">031</span>            int x = 0;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>            try {<a name="line.32"></a>
+<span class="sourceLineNo">033</span>                Scanner scan = new Scanner(textfile);<a name="line.33"></a>
+<span class="sourceLineNo">034</span><a name="line.34"></a>
+<span class="sourceLineNo">035</span>                //will loop until there is no more lines to scan<a name="line.35"></a>
+<span class="sourceLineNo">036</span>                while (breakLoop == false) {<a name="line.36"></a>
+<span class="sourceLineNo">037</span>                    //adds the next scan line into String tempz<a name="line.37"></a>
+<span class="sourceLineNo">038</span>                    String tempz = scan.nextLine();<a name="line.38"></a>
+<span class="sourceLineNo">039</span>                    //checks to see if there is a next line and that it looped at least 7 times<a name="line.39"></a>
+<span class="sourceLineNo">040</span>                    if (scan.hasNext() &amp;&amp; x &gt; 6) {<a name="line.40"></a>
+<span class="sourceLineNo">041</span>                        x++;<a name="line.41"></a>
+<span class="sourceLineNo">042</span>                        //add the whole line into staList<a name="line.42"></a>
+<span class="sourceLineNo">043</span>                        staList.add(tempz);<a name="line.43"></a>
+<span class="sourceLineNo">044</span>                        //adds just the station ID to staIndex<a name="line.44"></a>
+<span class="sourceLineNo">045</span>                        staIndex.add(tempz.substring(0, 3));<a name="line.45"></a>
+<span class="sourceLineNo">046</span><a name="line.46"></a>
+<span class="sourceLineNo">047</span>                    }<a name="line.47"></a>
+<span class="sourceLineNo">048</span>                    //checks to see it is in the first 6 lines of the file and will skip them<a name="line.48"></a>
+<span class="sourceLineNo">049</span>                    else if (scan.hasNext() &amp;&amp; x &lt; 7) {<a name="line.49"></a>
+<span class="sourceLineNo">050</span>                        x++;<a name="line.50"></a>
+<span class="sourceLineNo">051</span>                    }<a name="line.51"></a>
+<span class="sourceLineNo">052</span>                    //ends the loop, there are no more lines in the file<a name="line.52"></a>
+<span class="sourceLineNo">053</span>                    else {<a name="line.53"></a>
+<span class="sourceLineNo">054</span>                        breakLoop = true;<a name="line.54"></a>
+<span class="sourceLineNo">055</span>                    }<a name="line.55"></a>
+<span class="sourceLineNo">056</span>                }<a name="line.56"></a>
+<span class="sourceLineNo">057</span><a name="line.57"></a>
+<span class="sourceLineNo">058</span>                //closes the file<a name="line.58"></a>
+<span class="sourceLineNo">059</span>                scan.close();<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span>            } catch (FileNotFoundException e) {<a name="line.61"></a>
+<span class="sourceLineNo">062</span>                e.printStackTrace();<a name="line.62"></a>
+<span class="sourceLineNo">063</span>            }<a name="line.63"></a>
+<span class="sourceLineNo">064</span><a name="line.64"></a>
+<span class="sourceLineNo">065</span><a name="line.65"></a>
+<span class="sourceLineNo">066</span>        } catch (FileNotFoundException e) {<a name="line.66"></a>
+<span class="sourceLineNo">067</span>            e.printStackTrace();<a name="line.67"></a>
+<span class="sourceLineNo">068</span>        }<a name="line.68"></a>
+<span class="sourceLineNo">069</span><a name="line.69"></a>
+<span class="sourceLineNo">070</span>    }<a name="line.70"></a>
+<span class="sourceLineNo">071</span><a name="line.71"></a>
+<span class="sourceLineNo">072</span>    /**<a name="line.72"></a>
+<span class="sourceLineNo">073</span>     * Checks to see if the Station ID is in the ArrayList and will return true or false<a name="line.73"></a>
+<span class="sourceLineNo">074</span>     * @param strID The station ID as a string<a name="line.74"></a>
+<span class="sourceLineNo">075</span>     * @return returns true or false depending on if the ID apperes or not<a name="line.75"></a>
+<span class="sourceLineNo">076</span>     */<a name="line.76"></a>
+<span class="sourceLineNo">077</span>    public boolean exists(String strID) {<a name="line.77"></a>
+<span class="sourceLineNo">078</span>        return staIndex.contains(strID);<a name="line.78"></a>
+<span class="sourceLineNo">079</span>    }<a name="line.79"></a>
+<span class="sourceLineNo">080</span><a name="line.80"></a>
+<span class="sourceLineNo">081</span>    /**<a name="line.81"></a>
+<span class="sourceLineNo">082</span>     * Gets the length of the ArrayList staIndex<a name="line.82"></a>
+<span class="sourceLineNo">083</span>     * @return Returns the length of the StaIndex in an Int<a name="line.83"></a>
+<span class="sourceLineNo">084</span>     */<a name="line.84"></a>
+<span class="sourceLineNo">085</span>    public int length() {<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        return staIndex.size();<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    }<a name="line.87"></a>
+<span class="sourceLineNo">088</span><a name="line.88"></a>
+<span class="sourceLineNo">089</span>    /**<a name="line.89"></a>
+<span class="sourceLineNo">090</span>     * Takes in a string of the Station ID and returns the full string<a name="line.90"></a>
+<span class="sourceLineNo">091</span>     * @param strSationID The station ID as a String<a name="line.91"></a>
+<span class="sourceLineNo">092</span>     * @return returns the whole Station data for later processing<a name="line.92"></a>
+<span class="sourceLineNo">093</span>     */<a name="line.93"></a>
+<span class="sourceLineNo">094</span><a name="line.94"></a>
+<span class="sourceLineNo">095</span>    public String getStaWea(String strSationID) {<a name="line.95"></a>
+<span class="sourceLineNo">096</span><a name="line.96"></a>
+<span class="sourceLineNo">097</span>        if (exists(strSationID)) {<a name="line.97"></a>
+<span class="sourceLineNo">098</span>            //gets the index from staindex and gets the string in stalist of the corresponding index<a name="line.98"></a>
+<span class="sourceLineNo">099</span>            return staList.get(staIndex.indexOf(strSationID));<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        } else {<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            //If the station ID is not valid then it returns Station Not Found<a name="line.101"></a>
+<span class="sourceLineNo">102</span>            return "Station Not Found";<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        }<a name="line.103"></a>
+<span class="sourceLineNo">104</span>    }<a name="line.104"></a>
+<span class="sourceLineNo">105</span><a name="line.105"></a>
+<span class="sourceLineNo">106</span>    /**<a name="line.106"></a>
+<span class="sourceLineNo">107</span>     * Will write what ever it is passed to the Print Write file<a name="line.107"></a>
+<span class="sourceLineNo">108</span>     * @param s Any input that will be written to the PW file as a String<a name="line.108"></a>
+<span class="sourceLineNo">109</span>     */<a name="line.109"></a>
+<span class="sourceLineNo">110</span>    public void writeToFile(String s) {<a name="line.110"></a>
+<span class="sourceLineNo">111</span>        //adds S to the pw file on a new line<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        pw.println(s);<a name="line.112"></a>
+<span class="sourceLineNo">113</span>    }<a name="line.113"></a>
+<span class="sourceLineNo">114</span><a name="line.114"></a>
+<span class="sourceLineNo">115</span>    public String getStationID(int intPosition){<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        return staIndex.get(intPosition);<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    }<a name="line.117"></a>
+<span class="sourceLineNo">118</span><a name="line.118"></a>
+<span class="sourceLineNo">119</span>    /**<a name="line.119"></a>
+<span class="sourceLineNo">120</span>     * Will close the Print Write file<a name="line.120"></a>
+<span class="sourceLineNo">121</span>     */<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    public void closePW() {<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        //closes the pw file<a name="line.123"></a>
+<span class="sourceLineNo">124</span>        pw.close();<a name="line.124"></a>
+<span class="sourceLineNo">125</span>    }<a name="line.125"></a>
+<span class="sourceLineNo">126</span><a name="line.126"></a>
+<span class="sourceLineNo">127</span>}<a name="line.127"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

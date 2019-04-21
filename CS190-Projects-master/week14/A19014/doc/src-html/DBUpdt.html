@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>import java.sql.*;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/**<a name="line.3"></a>
+<span class="sourceLineNo">004</span> @author - Daniel Janes<a name="line.4"></a>
+<span class="sourceLineNo">005</span> @email - danieljanes@tuta.io<a name="line.5"></a>
+<span class="sourceLineNo">006</span> @studentid - 5450666<a name="line.6"></a>
+<span class="sourceLineNo">007</span> @assignment.number - A19014<a name="line.7"></a>
+<span class="sourceLineNo">008</span> @version - V2.0<a name="line.8"></a>
+<span class="sourceLineNo">009</span> @prgm.usage - directly from the OS<a name="line.9"></a>
+<span class="sourceLineNo">010</span> @screenprint - &lt;a href='a19014.gif'&gt;Screen Print&lt;/a&gt;<a name="line.10"></a>
+<span class="sourceLineNo">011</span> @see &lt;br&gt;&lt;a target='_blank' href='http://www.w3schools.com/html/'&gt;W3 HTML Site&lt;/a&gt;<a name="line.11"></a>
+<span class="sourceLineNo">012</span> @HTMLPAGE &lt;a href='..\data\\avia151.htm'&gt; Avia151 HTML page&lt;/a&gt;<a name="line.12"></a>
+<span class="sourceLineNo">013</span> */<a name="line.13"></a>
+<span class="sourceLineNo">014</span><a name="line.14"></a>
+<span class="sourceLineNo">015</span>public class DBUpdt extends DBRead implements DBUpdtTemplate{<a name="line.15"></a>
+<span class="sourceLineNo">016</span><a name="line.16"></a>
+<span class="sourceLineNo">017</span>    Connection dbConn;<a name="line.17"></a>
+<span class="sourceLineNo">018</span>    Statement dbCmdText;<a name="line.18"></a>
+<span class="sourceLineNo">019</span>    ResultSet dbRecordset;<a name="line.19"></a>
+<span class="sourceLineNo">020</span>    String dbTable;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>    String dbKeyField;<a name="line.21"></a>
+<span class="sourceLineNo">022</span>    DBRead dbr = new DBRead();<a name="line.22"></a>
+<span class="sourceLineNo">023</span><a name="line.23"></a>
+<span class="sourceLineNo">024</span>    public void addRecord(String strTable, String strKeyName, String strKeyContents) {<a name="line.24"></a>
+<span class="sourceLineNo">025</span>        String strSQL = "";<a name="line.25"></a>
+<span class="sourceLineNo">026</span><a name="line.26"></a>
+<span class="sourceLineNo">027</span>        try {<a name="line.27"></a>
+<span class="sourceLineNo">028</span>            // check to see if the record exists<a name="line.28"></a>
+<span class="sourceLineNo">029</span>            dbCmdText = dbConn.createStatement();<a name="line.29"></a>
+<span class="sourceLineNo">030</span>            strSQL = "SELECT * FROM " + strTable + " WHERE " +<a name="line.30"></a>
+<span class="sourceLineNo">031</span>                    strKeyName + "='" + strKeyContents + "'";<a name="line.31"></a>
+<span class="sourceLineNo">032</span>            query(strSQL);<a name="line.32"></a>
+<span class="sourceLineNo">033</span>            if (!moreRecords()) {<a name="line.33"></a>
+<span class="sourceLineNo">034</span>                // the record does not exist, therefore needs to be added to the table<a name="line.34"></a>
+<span class="sourceLineNo">035</span>                strSQL = "INSERT INTO " + strTable + " (" + strKeyName +<a name="line.35"></a>
+<span class="sourceLineNo">036</span>                        ") VALUES ('" + strKeyContents + "')";<a name="line.36"></a>
+<span class="sourceLineNo">037</span>                execute(strSQL);<a name="line.37"></a>
+<span class="sourceLineNo">038</span>                status("Record added");<a name="line.38"></a>
+<span class="sourceLineNo">039</span><a name="line.39"></a>
+<span class="sourceLineNo">040</span>            } else {<a name="line.40"></a>
+<span class="sourceLineNo">041</span>                status("Record NOT added " + strSQL);<a name="line.41"></a>
+<span class="sourceLineNo">042</span>            }<a name="line.42"></a>
+<span class="sourceLineNo">043</span>        } catch (Exception e) {<a name="line.43"></a>
+<span class="sourceLineNo">044</span>            status("SELECT command failed " + strSQL);<a name="line.44"></a>
+<span class="sourceLineNo">045</span>        }<a name="line.45"></a>
+<span class="sourceLineNo">046</span><a name="line.46"></a>
+<span class="sourceLineNo">047</span><a name="line.47"></a>
+<span class="sourceLineNo">048</span>    }<a name="line.48"></a>
+<span class="sourceLineNo">049</span><a name="line.49"></a>
+<span class="sourceLineNo">050</span>    public void deleteAll(String strTable) {<a name="line.50"></a>
+<span class="sourceLineNo">051</span><a name="line.51"></a>
+<span class="sourceLineNo">052</span>    }<a name="line.52"></a>
+<span class="sourceLineNo">053</span><a name="line.53"></a>
+<span class="sourceLineNo">054</span>    public void execute(String strSQL) {<a name="line.54"></a>
+<span class="sourceLineNo">055</span>        try {<a name="line.55"></a>
+<span class="sourceLineNo">056</span>            //dbConn=DriverManager.getConnection("jdbc:derby:" + "Weather");<a name="line.56"></a>
+<span class="sourceLineNo">057</span>            Statement stmt = DBRead.dbConn.createStatement();<a name="line.57"></a>
+<span class="sourceLineNo">058</span>            stmt.execute(strSQL);<a name="line.58"></a>
+<span class="sourceLineNo">059</span>            stmt.close();<a name="line.59"></a>
+<span class="sourceLineNo">060</span>            //test call<a name="line.60"></a>
+<span class="sourceLineNo">061</span>            //System.out.println("WORKED");<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        } catch (Exception ex) {<a name="line.62"></a>
+<span class="sourceLineNo">063</span>            ex.printStackTrace();<a name="line.63"></a>
+<span class="sourceLineNo">064</span>            status("Execute command failed " + strSQL);<a name="line.64"></a>
+<span class="sourceLineNo">065</span><a name="line.65"></a>
+<span class="sourceLineNo">066</span>        }<a name="line.66"></a>
+<span class="sourceLineNo">067</span><a name="line.67"></a>
+<span class="sourceLineNo">068</span>    }<a name="line.68"></a>
+<span class="sourceLineNo">069</span><a name="line.69"></a>
+<span class="sourceLineNo">070</span>    public void setField(String strTable, String strKeyName, String strKeyContents, String strFieldName, String strFieldContents) {<a name="line.70"></a>
+<span class="sourceLineNo">071</span><a name="line.71"></a>
+<span class="sourceLineNo">072</span>    }<a name="line.72"></a>
+<span class="sourceLineNo">073</span>}<a name="line.73"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

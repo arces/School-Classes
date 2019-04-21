@@ -1,0 +1,17 @@
+-author
+-tag studentid
+-tag email
+-tag assignment.number
+-version
+-tag prgm.usage
+-tag screenprint
+-notree
+-noindex
+-nohelp
+-nodeprecatedlist
+-linksource
+-doctitle 'CISC 190 Documentation'
+-windowtitle 'Javadoc Demo Program for Week 02'
+-header 'Program by<br>Dan Janes<br>CISC190 Java'
+-footer 'Fall 2015 - CISC 190<br>Miramar College<br>10440 Black Mtn Road<br>San Diego, CA 92126'
+-bottom '(c) 2014 by John Couture'

@@ -1,0 +1,3 @@
+CREATE TABLE STATIONS(ID varchar(5), stationid varchar(5), stationname varchar(50), state varchar(2), latitude varchar(10), longitude varchar(10), elevation varchar(5), windsaloft varchar(70), city varchar(50), temperature varchar(5), humidity varchar(5), windspeed varchar(5), winddirection varchar(5), pressure varchar(5), duepoint varchar(5))
+DROP TABLE WEATHER
+

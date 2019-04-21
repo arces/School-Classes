@@ -1,0 +1,18 @@
+-author
+-tag studentid
+-tag email
+-tag assignment.number
+-version
+-tag prgm.usage
+-tag screenprint
+-notree
+-noindex
+-nohelp
+-nodeprecatedlist
+-linksource
+-tag HTMLPAGE
+-doctitle 'CISC 190 Documentation'
+-windowtitle 'Program for Week 13'
+-header 'Program by<br>Daniel Janes<br>CISC190 Java'
+-footer 'Fall 2015 - CISC 190<br>Miramar College<br>10440 Black Mtn Road<br>San Diego, CA 92126'
+-bottom '(c) 2015 by Daniel Janes, Email: <a href="mailto:ASmith@aol.com">Email</a>'

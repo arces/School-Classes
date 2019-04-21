@@ -1,0 +1,370 @@
+Kwdd	Belle River		42-18N	082-42W	
+Keyw	Key West International Airport 	FL	24-33N	81-46W	
+Kmia	Miami International Airport 	FL	25-47N	080-19W	
+Kpbi	Palm Beach International	FL	26-41N	80-06W	
+Kmlb	Melbourne International	FL	28-06N	080-39W	
+Kmco	Orlando International Airport 	FL	28-25N	81-20W	
+Kjax	Jacksonville International	FL	30-30N	81-42W	
+Ksav	Savannah International Airport 	GA	32-07N	81-12W	
+Kchs	Charleston Int'l Airport	SC	32-54N	080-02W	
+Klhw	Ft. Stewart	GA	31-53N	081-34W	
+Ktbw	Tampa Bay Area	FL	27-42N	082-24W	
+Ktpa	Tampa International Airport 	FL	27-58N	082-32W	
+Kcty	Cross City Airport	FL	29-38N	083-06W	
+Kays	Waycross / Ware County, Ga	GA	31-15N	082-24W	
+Ktlh	Tallahassee Regional Airport 	FL	30-24N	84-21W	
+Kaby	Albany Southwest Georgia	GA	31-32N	084-12W	
+Kmcn	Middle Georgia Regional Airport 	GA	32-41N	83-39W	
+Kags	Augusta Bush Field	GA	33-22N	081-58W	
+Katl	Hartsfield-jackson Atlanta	GA	33-39N	84-26W	
+Kaqq	Apalachicola, Apalachicola	FL	29-43-37N	085-01-29W	
+Kvps	Valparaiso / Eglin Air Force Base	FL	30-29N	086-31W	
+Kmob	Mobile Regional Airport	AL	30-41N	88-14W	
+Klsf	Fort Benning	GA	32-20N	084-50W	
+Kmgm	Montgomery Dannelly Field	AL	32-18N	86-24W	
+Kmge	Marietta / Dobbins Air Force Base	GA	33-55N	084-31W	
+Kbhm	Birmingham Int'l Airport	AL	33-34N	086-45W	
+Kckl	Centreville	AL	32-54N	087-15W	
+Kmsy	New Orleans International  Airport	LA	30-00N	90-15W	
+Kbve	Boothville	LA	29-20N	089-24W	
+Klix	Slidell	LA	30-20N	089-49W	
+Kmei	Meridian Key Field	MS	32-20N	088-45W	
+Kjan	Jackson, Jackson International Airport	MS	32-19-11N	090-04-39W	
+Kpoe	Fort Polk, Polk Aaf Ft Polk	LA	31-03N	093-11-38W	
+Klch	Lake Charles Regional Airport 	LA	30-12N	093-23W	
+Kbpt	Southeast Texas Rgnl Airport	TX	29-95N	094-08W	
+Kgls	Scholes Field	TX	29-16N	094-52W	
+Kiah	Houston Intercontinental	TX	30-00N	095-22W	
+Kggg	Longview Gregg County Airport 	TX	32-23N	094-43W	
+Kshv	Shreveport Regional Airport	LA	32-27N	93-50W	
+Kfwd	Fort Worth	TX	32-50N	097-18W	
+Kbro	Brownsville/south Padre Is	TX	25-54N	97-25W	
+Kcrp	Corpus Christi International 	TX	27-46N	97-31W	
+Klrd	Laredo, Laredo International Airport	TX	27-32-37N	099-27-41W	
+Ksat	San Antonio International  Airport 	TX	29-32N	098-28W	
+Katt	Camp Mabry/austin City Asos	TX	30-19N	097-46W	
+Kvct	Victoria Regional Airport	TX	28-52N	96-56W	
+Kact	Waco Regional Airport	TX	31-36N	97-13W	
+Khlr	Fort Hood, Hood Aaf Ft Hood	TX	31-08N	097-42W	
+Kdfw	Dallas/ft. Worth International  Airport 	TX	32-54N	097-02W	
+Ksep	Stephenville, Clark Field Municipal Airport	TX	32-13N	098-11W	
+Kdrt	Del Rio International  Airport	TX	29-22N	100-55W	
+Kgdp	Guadalupe Pass	TX	31-50N	104-49W	
+Ksjt	Mathis Field	TX	31-21N	100-30W	
+Kmrf	Marfa	TX	30-22N	104-01W	
+Kmaf	Midland International Airport 	TX	31-56N	102-12W	
+Kabi	Abilene Regional Airport	TX	32-25N	099-41W	
+Klbb	Lubbock International Airport 	TX	33-40N	101-49W	
+Krow	Roswell Industrial Air Centr	NM	33-18N	104-32W	
+K2c2	White Sands	NM	32-23N	106-29W	
+Kelp	El Paso International Airport 	TX	31-49N	106-23W	
+Ktcs	Truth Or Consequences Muni	NM	33-14N	107-16W	
+Ksvc	Silver City / Grant	NM	32-38N	108-09W	
+Kfhu	Fort Huachuca, Libby Aaf Ft Huachuca	AZ	46-98N	110-20W	
+Ktus	Tucson International Airport 	AZ	32-08N	110-57W	
+Krqe	Window Rock Airport	AZ	35-39N	109-04W	
+Kphx	Phoenix, Phoenix Sky Harbor International Airport	AZ	33-26-03N	112-03-04W	
+Kyum	Yuma / Yuma International	AZ	32-39N	114-36W	
+Knjk	El Centro, Naval Air Facility	CA	32-49-30N	115-39-38W	
+Kbjn	Las Vegas, Tonopah Range #74 Nellis Afb	NV	37-37-02	116-15-51W	
+Kriv	Riverside / March Air Force Base	CA	33-54N	117-15W	
+Kbur	Burbank-glendale-pasadena	CA	34-12N	118-22W	
+Kmws	Mount Wilson	CA	34-14N	118-04W	
+Ksan	San Diego International \lindbergh Fld	CA	32-44N	117-11W	
+Knsi	San Nicolas Island	CA	33-14N	119-28W	
+Kavx	Avalon Catalina Airport	CA	33-24N	118-25W	
+Knkx	Mcas Miramar	CA	32-52N	117-09W	
+Klax	Los Angeles Interntl Airport	CA	33-56N	118-23W	
+Klgb	Long Beach Airport	CA	33-49N	118-09W	
+Kpob	Pope Air Force Base	NC	35-10N	079-02W	
+Khat	Cape Hatteras	NC	35-16N	075-33W	
+Kmhx	Newport	NC	34-47N	076-53W	
+Krdu	Raleigh-durham International  Airport	NC	35-54N	078-46W	
+Korf	Norfolk International Airport 	VA	36-54N	076-12W	
+Knkt	Cherry Point, Marine Corps Air Station	NC	34-53-52N	076-52-51W	
+Kcae	Columbia Metropolitan Airport 	SC	33-57N	081-07W	
+Kahn	Athens Ben Epps Airport	GA	33-57N	083-20W	
+Kgsp	Greer Greenville Spartburg	SC	34-53N	82-13W	
+Kclt	Charlotte/douglas International 	NC	35-13N	80-57W	
+Kavl	Asheville Regional Airport	NC	35-26N	82-32W	
+Kgso	Piedmont Triad International  Airport 	NC	36-06N	079-57W	
+Krmg	Rome R. B. Russell Airport	GA	34-21N	085-10W	
+Khsv	Huntsville International  Jones Field	AL	34-39N	086-47W	
+Kcha	Lovell Field	TN	35-02N	085-12W	
+Ktys	Mcghee Tyson Airport	TN	35-49N	083-59W	
+Kbna	Nashville International  Airport	TN	36-07N	086-41W	
+Ktup	Tupelo Regional Airport	MS	34-16N	88-46W	
+Kmem	Memphis International Airport 	TN	35-02N	089-59W	
+Klzk	North Little Rock, North Little Rock Airport	AR	34-50N	092-15W	
+Krue	Russelville Municipal Airport 	AR	35-15N	93-06W	
+Kfsm	Fort Smith Regional Airport	AR	35-20N	94-22W	
+Ksps	Wichita Falls Sheppard Afb	TX	33-59N	98-30W	
+Klts	Altus Air Force Base	OK	34-39N	099-16W	
+Kokc	Will Rogers World Airport	OK	35-23N	97-36W	
+Ktik	Tinker Air Force Base	OK	35-25N	097-23W	
+Kfsi	Fort Sill	OK	34-36N	098-24W	
+Ktul	Tulsa International Airport	OK	36-12N	95-53W	
+Koun	Norman / Max Westheimer	OK	35-13N	097-27W	
+Kcao	Clayton Municipal Airpark	NM	36-27N	103-09W	
+Konm	Socorro Municipal	NM	34-01N	106-54W	
+Kama	Amarillo International  Airport	TX	35-13N	101-43W	
+Kepz	Santa Teresa	NM	31-52N	106-42W	
+Kabq	Albuquerque International  Airport	NM	35-02N	106-36W	
+Kigm	Kingman Airport	AZ	35-15N	113-56W	
+Kpga	Page Municipal Airport	AZ	36-56N	111-27W	
+Kinw	Winslow Municipal Airport	AZ	35-02N	110-43W	
+Kedw	Edwards Air Force Base	CA	34-55N	117-54W	
+Kpmd	Palmdale Prod Flight Plant	CA	34-38N	118-05W	
+Ksdb	Sandberg	CA	34-45N	118-43W	
+Kbfl	Bakersfield Meadows Field	CA	35-26N	119-03W	
+Klas	Mccarran International Airport 	NV	36-07N	115-16W	
+Kdra	Desert Rock Airport	NV	36-38N	116-02W	
+Kfat	Fresno Air Terminal	CA	36-47N	119-43W	
+K87q	Point Piedras Blanca	CA	35-39-56N	121-17-05W	
+Kntd	Nawcwpns Point Mugu, Ca	CA	34-07N	119-07W	
+Kvbg	Lompoc, Vandenberg Air Force Base	CA	34-43-46N	120-34-36W	
+Ksmx	Santa Maria Public Airport	CA	34-54N	120-28W	
+Kric	Richmond International  Airport	VA	37-31N	077-19W	
+Kwal	Wallops Flight Fac Airport 	VA	37-56N	075-28W	
+Kiad	Dulles International Airport	VA	38-56N	077-27W	
+Knhk	Nas Patuxent River Md	MD	38-18N	76-24W	
+Kdca	Washington National Airport 	VA	38-51N	077-02W	
+Kbwi	Baltimore-washington International 	MD	39-10N	076-41W	
+Kacy	Atlantic City International	NJ	39-28N	74-35W	
+Kphl	Philadelphia International  Airpt	PA	39-52N	075-14W	
+Knel	Lakehurst Naval Air Station	NJ	40-02N	074-19W	
+Klyh	Lynchburg Regional Airport	VA	37-19N	079-12W	
+Kroa	Roanoke Regional Airport	VA	37-19N	079-58W	
+Kbkw	Raleigh County Mem Airport 	WV	37-48N	081-07W	
+Kcrw	Yeager Airport	WV	38-22N	081-36W	
+Kekn	Jennings Randolph Field	WV	38-53N	079-51W	
+Kcvg	Cincinnati/northern Ky International 	KY	39-03N	084-40W	
+Klex	Lexington Blue Grass Airport	KY	38-02N	084-36W	
+Ksdf	Standiford Field	KY	38-11N	085-44W	
+Kftk	Fort Knox	KY	37-54N	085-58W	
+Khts	Tri-state Airport	WV	38-22N	082-33W	
+Kcmh	Port Columbus International  Airport	OH	40-00N	82-53W	
+Kday	Cox Dayton International	OH	39-54N	084-13W	
+Kevv	Evansville Regional	IN	38-02N	087-32W	
+Kslo	Salem, Salem-leckrone Airport	IL	38-38-34N	088-57-51W	
+Kstl	Lambert-st Louis International  Airport 	MO	38-45N	90-22W	
+Kpah	Barkley Regional Airport	KY	37-03N	088-46W	
+Kind	Indianapolis International  Airport 	IN	39-43N	86-17W	
+Ksgf	Springfield-branson National	MO	37-14N	93-23W	
+Kcou	Columbia Regional Airport	MO	38-49N	092-13W	
+Kmci	Kansas City International  Airport	MO	39-18N	94-44W	
+Kstj	Rosecrans Memorial Airport	MO	39-46N	94-55W	
+Kict	Wichita Mid-continent Airport 	KS	37-39N	97-26W	
+Kddc	Dodge City Regional Airport	KS	37-46N	99-58W	
+Kp28	Medicine Lodge	KS	37-17N	098-33W	
+Kfri	Fort Riley, Marshall Aaf Ft Riley	KS	39-03-20N	096-45-51W	
+Ktop	Topeka Billard Municipal Airport	KS	39-04N	95-38W	
+Kcnk	Concordia, Blosser Municipal Airport	KS	39-33-05N	097-39-02W	
+K1k5	Elkhart / Elkhart-morton County Airport	KS	37-00N	101-53W	
+Kals	San Luis Valley Regional	CO	37-26N	105-52W	
+Kpub	Pueblo Memorial Airport	CO	38-17N	104-30W	
+Kgld	Goodland Renner Field	KS	39-22N	101-42W	
+Kcos	Colorado Springs Muni	CO	38-49N	104-43W	
+Kfcs	Fort Carson	CO	38-42N	104-46W	
+Kdnr	Denver / Stapleton International, Co.	CO	39-47N	104-52W	
+Kpuc	Price Carbon County Airport	UT	39-37N	110-45W	
+Kgjt	Grand Junction Walker Field	CO	39-08N	108-32W	
+Kbih	Bishop Airport	CA	37-22N	118-22W	
+Kmer	Merced / Castle Air Force Base	CA	37-22N	120-34W	
+Ksac	Sacramento Executive Airport 	CA	38-30N	121-30W	
+Kely	Ely Airport (yelland Field)	NV	39-18N	114-51W	
+Kp38	Caliente	NV	37-36-44N	114-31-35W	
+Krno	Reno/tahoe International  Airport	NV	39-29N	119-46W	
+Ksck	Stockton Metropolitan Airport 	CA	37-54N	121-14W	
+Koak	Metro Oakland International  Airport 	CA	37-43N	122-14W	
+Ksfo	San Francisco International  Airport 	CA	37-37N	122-22W	
+K50q	Farallon Island	CA	37-42N	123-00W	
+Kewr	Newark International  Airport	NJ	40-41N	74-10W	
+Klga	New York La Guardia Airport 	NY	40-47N	73-53W	
+Kbdr	Sikorsky Memorial Airport	CT	41-10N	073-08W	
+Kfmh	Otis Air National Guard Base	MA	41-39N	070-31W	
+Kpvd	Providence Green State Airport 	RI	41-44N	071-26W	
+Kbdl	Bradley International Airport 	CT	41-56N	072-41W	
+Kbos	Boston Logan International	MA	42-22N	071-01W	
+Kavp	Wilkes-barre/scranton International 	PA	41-20N	75-44W	
+Kipt	Williamsport-lycoming County	PA	41-15N	076-55W	
+Kbgm	Binghamton Regional Airport	NY	42-12N	75-59W	
+Kabe	Lehigh Valley International  Airport	PA	40-39N	075-27W	
+Kalb	Albany International Airport	NY	42-45N	73-48W	
+Ksyr	Syracuse Hancock International  Airport 	NY	43-07N	76-06W	
+Kpit	Greater Pittsburgh International 	PA	40-29N	80-14W	
+Kcak	Akron-canton Regional Airport 	OH	40-55N	081-27W	
+Kcle	Cleveland-hopkins International 	OH	41-24N	081-51W	
+Kyng	Youngstown-warren Reg Airprt	OH	41-15N	080-40W	
+Keri	Erie International Airport	PA	42-05N	080-11W	
+Kbuf	Greater Buffalo International  Airport 	NY	42-56N	078-44W	
+Kroc	Greater Rochester International 	NY	43-07N	077-41W	
+Kord	Chicago O'hare International	IL	41-59N	087-55W	
+Kpia	Greater Peoria Regional Airport 	IL	40-40N	89-41W	
+Kfwa	Fort Wayne International	IN	41-00N	85-12W	
+Kmdw	Chicago Midway Airport	IL	41-47N	087-45W	
+Ksbn	South Bend Regional Airport	IN	41-42N	086-19W	
+Ktol	Toledo Express Airport	OH	41-35N	083-48W	
+Kdtw	Detroit Metropolitan	MI	42-14N	83-20W	
+Klan	Capital City Airport	MI	42-47N	084-35W	
+Kp35	Spickard	MO	40-15N	093-43W	
+Krfd	Greater Rockford Airport	IL	42-12N	89-06W	
+Kmli	Moline Quad-city Airport	IL	41-27N	90-31W	
+Kdsm	Des Moines International	IA	41-32N	93-40W	
+Kdbq	Dubuque Regional Airport	IA	42-24N	90-42W	
+Kalo	Waterloo Municipal Airport	IA	42-33N	92-24W	
+Kfod	Fort Dodge	IA	42-33N	094-11W	
+Koma	Omaha Eppley Airfield	NE	41-18N	095-54W	
+Klnk	Lincoln Municipal Airport	NE	40-50N	96-46W	
+Kgri	Central Nebraska Regional	NE	40-58N	98-19W	
+Koff	Omaha / Offutt Air Force Base	NE	41-07N	095-54W	
+Kofk	Karl Stefan Memorial Airport	NE	41-59N	097-26W	
+Ksux	Sioux Gateway Airport	IA	42-23N	96-23W	
+Koax	Valley	NE	41-19N	096-22W	
+Ksny	Sidney Municipal Airport	NE	41-06N	102-59W	
+Klbf	North Platte Regional Airport 	NE	41-07N	100-40W	
+Kcys	Cheyenne Airport	WY	41-09N	104-48W	
+Kden	Denver International Airport	CO	39-52N	104-40W	
+Kbff	Scottsbluff Heilig Field	NE	41-52N	103-36W	
+Kvtn	Miller Field - Valentine, Ne	NE	42-52N	100-33W	
+Kdgw	Douglas Converse County	WY	42-48N	105-23W	
+Kcpr	Natrona County International  Airport 	WY	42-54N	106-28W	
+Kcag	Craig Moffat Airport	CO	40-30N	107-31W	
+Kslc	Salt Lake City International  Airport 	UT	40-47N	111-58W	
+Krks	Rock Springs-sweetwater Co	WY	41-36N	109-03W	
+Kogd	Ogden-hinckley Airport	UT	41-12N	112-01W	
+Klnd	Lander Hunt Field	WY	42-49N	108-44W	
+Kpih	Pocatello Regional Airport	ID	42-55N	112-36W	
+Kenv	Wendover / Air Force Auxillary Field	UT	40-44N	114-02W	
+Kwmc	Winnemucca Municipal Airport	NV	40-54N	117-48W	
+Ko64	Fort Bragg	CA	39-24N	123-49W	
+Krbl	Red Bluff Municipal Airport	CA	40-09N	122-15W	
+Krdd	Redding Municipal Airport	CA	40-30N	122-17W	
+Keka	Eureka	CA	40-48N	124-10W	
+Kmfr	Rogue Valley International  Airport	OR	42-23N	122-53W	
+Kcon	Concord, Concord Municipal Airport	NH	43-11-43N	071-30-04W	
+Kpwm	Portland International  Jetport	ME	43-39N	70-18W	
+Kepo	Eastport	ME	44-55N	067-00W	
+K9b2	Newport	VT	44-56N	072-12W	
+Kmwn	Mount Washington	NH	44-16N	071-18W	
+K1v4	St Johnsbury Fairbanks	VT	44-25N	072-01W	
+Kbml	Berlin Municipal Airport	NH	44-35N	71-11W	
+Kbtv	Burlington International	VT	44-28N	73-09W	
+Krum	Rumford	ME	44-32N	070-32W	
+Kgrr	Gerald R. Ford International	MI	42-53N	085-31W	
+Kmkg	Muskegon County Airport	MI	43-10N	086-14W	
+Kfnt	Flint Bishop International  Airport	MI	42-58N	83-45W	
+Khtl	Roscommon County Airport	MI	44-21N	084-40W	
+Kapn	Alpena County Regional Airport	MI	45-05N	083-34W	
+Kmke	Gen Mitchell International  Airport	WI	42-57N	87-54W	
+Kmsn	Madison Dane County Rgnl	WI	43-08N	89-21W	
+Klse	La Crosse Municipal Airport 	WI	43-53N	091-15W	
+Krst	Rochester International Airport 	MN	43-54N	092-30W	
+Kgrb	Austin Straubel International  Airport 	WI	44-29N	088-08W	
+Kesc	Escanaba	MI	45-45N	087-02W	
+Kfsd	Sioux Falls Foss Field	SD	43-35N	096-45W	
+K9v9	Chamberlain Municipal Airport	SD	43-46N	099-19W	
+Khon	Huron Regional Airport	SD	44-23N	098-14W	
+Ksfd	Winner, Bob Wiley Field Airport	SD	43-23-26N	099-50-33W	
+Kmsp	Minneapolis-st Paul International 	MN	44-52N	93-13W	
+Kabr	Aberdeen Regional Airport	SD	45-27N	098-25W	
+Krap	Rapid City Regional Airport 	SD	44-03N	103-03W	
+Kgcc	Gillette-campbell Cty Airport 	WY	44-20N	105-33W	
+Kshr	Sheridan County Airport	WY	44-46N	106-58W	
+Kcod	Cody	WY	44-31N	109-01W	
+Kbpi	Big Piney-marbleton Airport	WY	42-35N	110-06W	
+Kriw	Riverton Regional Airport	WY	43-04N	108-27W	
+Kbil	Logan International Airport	MT	45-49N	108-33W	
+Kboi	Boise Air Terminal	ID	43-34N	116-14W	
+Kbno	Burns Municipal Airport	OR	43-36N	118-57W	
+Kpdt	Pendleton Municipal Airport	OR	45-70N	118-83W	
+Keug	Mahlon Sweet Field	OR	44-08N	123-13W	
+Ksle	Salem Mcnary Field	OR	44-54N	123-00W	
+Kpdx	Portland International  Airport	OR	45-35N	122-36W	
+Kcar	Caribou Municipal Airport	ME	46-52N	68-01W	
+Kpqi	Presque Isle	ME	46-41N	068-03W	
+Kanj	Sault Ste. Marie Muni	MI	46-29N	084-21W	
+Kpkf	Park Falls	WI	45-56N	090-27W	
+Kmqt	Marquette	MI	46-32N	087-33W	
+Kcmx	Hancock Houghton Cty. Memo	MI	47-10N	088-29W	
+Kdlh	Duluth, Duluth International Airport	MN	46-50-34N	092-13-34W	
+Kinl	Falls International Airport 	MN	48-34N	093-24W	
+Kp39	Pequot Lake	MN	46-36N	094-19W	
+Kfar	Hector International Airport 	ND	46-56N	096-49W	
+Kbji	Bemidji	MN	47-30N	094-56W	
+Kd45	Warroad	MN	48-56N	095-21W	
+Kp11	Devils Lake	ND	48-06N	098-52W	
+Kbis	Bismarck Municipal Airport	ND	46-47N	100-45W	
+Kp24	Roseglen	ND	47-45N	101-50W	
+Kisn	Sloulin Field International  Airport	ND	48-11N	103-39W	
+Kggw	Glasgow International Airport 	MT	48-13N	106-37W	
+Khln	Helena Regional Airport	MT	46-36N	111-58W	
+Kmso	Missoula International Airport 	MT	46-55N	114-06W	
+Kgtf	Great Falls International	MT	47-28N	111-23W	
+Khvr	Havre City-county Airport	MT	48-33N	109-46W	
+Kgpi	Glacier Park International  Airport	MT	48-18N	114-16W	
+Kykm	Yakima Air Terminal	WA	46-34N	120-32W	
+Klws	Lewiston Nez Perce Co Airport 	ID	46-22N	117-01W	
+Khms	Hanford	WA	46-34N	119-36W	
+Kgeg	Spokane International Airport 	WA	47-37N	117-32W	
+Kast	Port Of Astoria Airport	OR	46-09N	123-53W	
+Kolm	Olympia Airport	WA	46-58N	122-54W	
+Ksea	Seattle-tacoma International  Airport 	WA	47-27N	122-19W	
+Kuil	Quillayute State Airport	WA	47-56N	124-34W	
+Kdpg	Dugway Proving Grounds	UT	40-10N	112-56W	
+Know	Port Angeles Coast Guard Air Station	WA	48-08N	123-24W	
+Ktcm	Tacoma / Mcchord Air Force Base	WA	47-09N	122-29W	
+Kgrf	Fort Lewis / Gray U. S. Army Airfield	WA	47-07N	122-33W	
+Kmls	Miles City Wiley Field	MT	46-26N	105-53W	
+K3rn	Graying Air Force Range	MI	44-50N	084-33W	
+Kgtb	Fort Drum / Wheeler-sack U. S. Army Airfield	NY	44-03N	075-44W	
+Knhz	Brunswick Naval Air Stn	ME	43-54N	69-56W	
+Ku67	Roosevelt	UT	40-18N	109-59W	
+Kmmo	Marseilles Island	IL	41-22N	088-41W	
+Kjfk	Kennedy International Airport 	NY	40-38N	073-46W	
+Kbed	Bedford Hanscom Field	MA	42-28N	071-18W	
+Kcef	Chicopee Falls / Westover Air Force Base	MA	42-12N	072-32W	
+Kchh	Chatham	MA	41-40N	069-58W	
+Kngz	Alameda Naval Air Station	CA	37-47N	122-19W	
+Knuq	Moffett Field	CA	37-26N	122-03W	
+Ksuu	Fairfield / Travis Air Force Base	CA	38-16N	121-57W	
+Kaff	Air Force Academy	CO	38-58N	104-49W	
+Kptt	Pratt Municipal	KS	37-42N	098-45W	
+Kffo	Dayton / Wright-patterson Air Force Base	OH	39-50N	084-03W	
+Kn78	Barnegat Coast Guard Station	NJ	39-46N	074-06W	
+Kadw	Camp Springs / Andrews Air Force Base	MD	38-49N	076-51W	
+Kw30	Ocean City	MD	38-20N	075-05W	
+Klfi	Langley Air Force Base	VA	37-05N	076-21W	
+Kbys	Fort Irwin/barstow, Bicycle Lake Army Airfield	CA	35-17N	116-37W	
+Knid	Naws China Lake	CA	35-41N	117-42W	
+Kins	Indian Springs, Indian Springs Auxiliary Afld Nellis Afb	NV	36-35N	115-40W	
+K4cb	Cuddleback Gunnery Range	CA	35-16N	117-26W	
+K4su	Superior Valley Gunnery Range	CA	36-20N	117-06W	
+K4mr	Melrose Gunnery Range	NM	34-18N	103-48W	
+Kwwr	Woodward, West Woodward Airport	OK	36-26-12N	099-31-16W	
+Kh92	Hominy Municipal	OK	36-26N	096-23W	
+Kf10	Henryetta Municipal	OK	35-24N	096-01W	
+Kf30	Sulphur Municipal	OK	34-31N	096-59W	
+Khop	Fort Campbell U. S. Army Airfield	KY	36-40N	087-30W	
+Kfbg	Fort Bragg / Simmons Army Airfield	NC	35-08N	078-56W	
+K2dp	Dare County Gunnery Range	NC	35-40N	075-54W	
+K44w	Diamond Shoals Coast Guard Station	NC	35-09N	075-18W	
+Knlc	Lemoore Naval Air Station	CA	36-20N	119-57W	
+Kgbn	Gila Bend U. S. Army Airfield	AZ	32-26N	112-41W	
+Kp07	Sanderson	TX	30-10N	102-25W	
+Khmn	Holloman Air Force Base	NM	32-51N	106-06W	
+Ke28	Northrup Landing Strip	NM	33-54N	106-24W	
+Kjct	Kimble County Airport	TX	30-31N	099-46W	
+Kaex	Alexandria International Airport	LA	31-33N	092-56W	
+K01r	Claiborne Range, Airways Facilities Sector 	LA	31-08N	092-34W	
+Kpam	Tyndall Air Force Base	FL	30-04N	085-35W	
+Khrt	Hurlburt Field	FL	30-25N	086-41W	
+Kvad	Moody Air Force Base	GA	30-58N	083-12W	
+Kmcf	Macdill Air Force Base, Fl.	FL	27-51N	082-30W	
+Kssc	Shaw Air Force Base	SC	33-58N	080-29W	
+Kmyr	Myrtle Beach Air Force Base	SC	33-41N	078-56W	
+K2pj	Poinsett Range, Sumpter	SC	33-51N	080-29W	
+Kxmr	Cocoa Beach, Cape Canaveral Air Force Station Skid Strip	FL	28-28N	080-34W	
+Kcof	Cocoa / Patrick Air Force Base	FL	28-14N	080-36W	
+Kagr	Avon Park Gunnery Range	FL	27-39N	081-20W	
+Kqha	Fob Mandrian		19-40N	072-62W	

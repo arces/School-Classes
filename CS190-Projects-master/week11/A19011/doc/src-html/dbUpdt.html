@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>import java.sql.*;<a name="line.1"></a>
+<span class="sourceLineNo">002</span>import java.lang.*;<a name="line.2"></a>
+<span class="sourceLineNo">003</span><a name="line.3"></a>
+<span class="sourceLineNo">004</span>/**<a name="line.4"></a>
+<span class="sourceLineNo">005</span> @author - Dan Janes<a name="line.5"></a>
+<span class="sourceLineNo">006</span> @email - Thatcoolemailat@yahoo.com<a name="line.6"></a>
+<span class="sourceLineNo">007</span> @studentid - 5450666<a name="line.7"></a>
+<span class="sourceLineNo">008</span> @assignment.number - A19011<a name="line.8"></a>
+<span class="sourceLineNo">009</span> @version - V 2.0<a name="line.9"></a>
+<span class="sourceLineNo">010</span> @outputFile &lt;a href='..\data\\commands.txt'&gt;Commands&lt;/a&gt;<a name="line.10"></a>
+<span class="sourceLineNo">011</span> @prgm.usage - Called directly from the operating system<a name="line.11"></a>
+<span class="sourceLineNo">012</span> @screenprint - &lt;a href='a19011.gif'&gt;Screen Print&lt;/a&gt;<a name="line.12"></a>
+<span class="sourceLineNo">013</span> @see &lt;br&gt;&lt;a target='_blank' href='https://db.apache.org/derby/'&gt;Derby Database&lt;/a&gt;<a name="line.13"></a>
+<span class="sourceLineNo">014</span><a name="line.14"></a>
+<span class="sourceLineNo">015</span> */<a name="line.15"></a>
+<span class="sourceLineNo">016</span>public class dbUpdt extends dbRead implements dbUpdtTemplate {<a name="line.16"></a>
+<span class="sourceLineNo">017</span>    Connection dbConn;<a name="line.17"></a>
+<span class="sourceLineNo">018</span>    Statement dbCmdText;<a name="line.18"></a>
+<span class="sourceLineNo">019</span>    ResultSet dbRecordset;<a name="line.19"></a>
+<span class="sourceLineNo">020</span>    String dbTable;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>    String dbKeyField;<a name="line.21"></a>
+<span class="sourceLineNo">022</span>    dbRead dbr = new dbRead();<a name="line.22"></a>
+<span class="sourceLineNo">023</span><a name="line.23"></a>
+<span class="sourceLineNo">024</span>    public dbUpdt() {<a name="line.24"></a>
+<span class="sourceLineNo">025</span><a name="line.25"></a>
+<span class="sourceLineNo">026</span><a name="line.26"></a>
+<span class="sourceLineNo">027</span>    }<a name="line.27"></a>
+<span class="sourceLineNo">028</span><a name="line.28"></a>
+<span class="sourceLineNo">029</span><a name="line.29"></a>
+<span class="sourceLineNo">030</span>    /**<a name="line.30"></a>
+<span class="sourceLineNo">031</span>     * Will drop the table of TableName<a name="line.31"></a>
+<span class="sourceLineNo">032</span>     * @param TableName Table to be dropped<a name="line.32"></a>
+<span class="sourceLineNo">033</span>     * @return Will return if it dropped the table or not<a name="line.33"></a>
+<span class="sourceLineNo">034</span>     * @throws SQLException the exption if the connection is not succesfull<a name="line.34"></a>
+<span class="sourceLineNo">035</span>     */<a name="line.35"></a>
+<span class="sourceLineNo">036</span>    public String dropTables(String TableName) throws SQLException {<a name="line.36"></a>
+<span class="sourceLineNo">037</span><a name="line.37"></a>
+<span class="sourceLineNo">038</span><a name="line.38"></a>
+<span class="sourceLineNo">039</span><a name="line.39"></a>
+<span class="sourceLineNo">040</span>        dbConn=DriverManager.getConnection("jdbc:derby:" + "Weather");<a name="line.40"></a>
+<span class="sourceLineNo">041</span><a name="line.41"></a>
+<span class="sourceLineNo">042</span>        try {<a name="line.42"></a>
+<span class="sourceLineNo">043</span><a name="line.43"></a>
+<span class="sourceLineNo">044</span>            // Get a Statement object.<a name="line.44"></a>
+<span class="sourceLineNo">045</span>            Statement stmt = dbConn.createStatement();<a name="line.45"></a>
+<span class="sourceLineNo">046</span><a name="line.46"></a>
+<span class="sourceLineNo">047</span>            try {<a name="line.47"></a>
+<span class="sourceLineNo">048</span>                // Drop the UnpaidOrder table.<a name="line.48"></a>
+<span class="sourceLineNo">049</span>                stmt.execute("DROP TABLE " + TableName);<a name="line.49"></a>
+<span class="sourceLineNo">050</span>                return "Tabled dropped";<a name="line.50"></a>
+<span class="sourceLineNo">051</span>            } catch (SQLException ex) {<a name="line.51"></a>
+<span class="sourceLineNo">052</span>                ex.printStackTrace();<a name="line.52"></a>
+<span class="sourceLineNo">053</span>                // No need to report an error.<a name="line.53"></a>
+<span class="sourceLineNo">054</span>                // The table simply did not exist.<a name="line.54"></a>
+<span class="sourceLineNo">055</span>            }<a name="line.55"></a>
+<span class="sourceLineNo">056</span><a name="line.56"></a>
+<span class="sourceLineNo">057</span>        } catch (SQLException ex) {<a name="line.57"></a>
+<span class="sourceLineNo">058</span>            System.out.println("ERROR: " + ex.getMessage());<a name="line.58"></a>
+<span class="sourceLineNo">059</span>            ex.printStackTrace();<a name="line.59"></a>
+<span class="sourceLineNo">060</span>        }<a name="line.60"></a>
+<span class="sourceLineNo">061</span>        dbConn.close();<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        return"Tabled droppedd";<a name="line.62"></a>
+<span class="sourceLineNo">063</span>    }<a name="line.63"></a>
+<span class="sourceLineNo">064</span><a name="line.64"></a>
+<span class="sourceLineNo">065</span>    /**<a name="line.65"></a>
+<span class="sourceLineNo">066</span>     * Will execute the command<a name="line.66"></a>
+<span class="sourceLineNo">067</span>     * @param strSQL The command to execute<a name="line.67"></a>
+<span class="sourceLineNo">068</span>     */<a name="line.68"></a>
+<span class="sourceLineNo">069</span>    public void execute(String strSQL) {<a name="line.69"></a>
+<span class="sourceLineNo">070</span><a name="line.70"></a>
+<span class="sourceLineNo">071</span><a name="line.71"></a>
+<span class="sourceLineNo">072</span>        try {<a name="line.72"></a>
+<span class="sourceLineNo">073</span>            dbConn=DriverManager.getConnection("jdbc:derby:" + "Weather");<a name="line.73"></a>
+<span class="sourceLineNo">074</span>            Statement stmt = dbConn.createStatement();<a name="line.74"></a>
+<span class="sourceLineNo">075</span>            stmt.execute(strSQL);<a name="line.75"></a>
+<span class="sourceLineNo">076</span>        } catch (Exception ex) {<a name="line.76"></a>
+<span class="sourceLineNo">077</span>            status("Execute command failed " + strSQL);<a name="line.77"></a>
+<span class="sourceLineNo">078</span><a name="line.78"></a>
+<span class="sourceLineNo">079</span>        }<a name="line.79"></a>
+<span class="sourceLineNo">080</span>        try {<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            dbConn.close();<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        } catch (SQLException e) {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            e.printStackTrace();<a name="line.83"></a>
+<span class="sourceLineNo">084</span>        }<a name="line.84"></a>
+<span class="sourceLineNo">085</span><a name="line.85"></a>
+<span class="sourceLineNo">086</span>    }<a name="line.86"></a>
+<span class="sourceLineNo">087</span><a name="line.87"></a>
+<span class="sourceLineNo">088</span><a name="line.88"></a>
+<span class="sourceLineNo">089</span>    /**<a name="line.89"></a>
+<span class="sourceLineNo">090</span>     * Does nothing as of 11/8/2015<a name="line.90"></a>
+<span class="sourceLineNo">091</span>     * @param strTable<a name="line.91"></a>
+<span class="sourceLineNo">092</span>     * @param strKeyName<a name="line.92"></a>
+<span class="sourceLineNo">093</span>     * @param strKeyContents<a name="line.93"></a>
+<span class="sourceLineNo">094</span>     * @param strFieldName<a name="line.94"></a>
+<span class="sourceLineNo">095</span>     * @param strFieldContents<a name="line.95"></a>
+<span class="sourceLineNo">096</span>     * @throws Exception<a name="line.96"></a>
+<span class="sourceLineNo">097</span>     */<a name="line.97"></a>
+<span class="sourceLineNo">098</span>    public void setField(String strTable, String strKeyName, String strKeyContents, String strFieldName, String strFieldContents) throws Exception {<a name="line.98"></a>
+<span class="sourceLineNo">099</span><a name="line.99"></a>
+<span class="sourceLineNo">100</span>    }<a name="line.100"></a>
+<span class="sourceLineNo">101</span><a name="line.101"></a>
+<span class="sourceLineNo">102</span>    /**<a name="line.102"></a>
+<span class="sourceLineNo">103</span>     * Will return if there are more records left<a name="line.103"></a>
+<span class="sourceLineNo">104</span>     * @return True or false<a name="line.104"></a>
+<span class="sourceLineNo">105</span>     */<a name="line.105"></a>
+<span class="sourceLineNo">106</span>    public boolean moreRecords() {<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        boolean blnStatus = false;<a name="line.107"></a>
+<span class="sourceLineNo">108</span>        try {<a name="line.108"></a>
+<span class="sourceLineNo">109</span>            blnStatus = dbRecordset.next();<a name="line.109"></a>
+<span class="sourceLineNo">110</span>        } catch (Exception e) {<a name="line.110"></a>
+<span class="sourceLineNo">111</span>            blnStatus = false;<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        }<a name="line.112"></a>
+<span class="sourceLineNo">113</span>        return blnStatus; // only one RETURN in each function!<a name="line.113"></a>
+<span class="sourceLineNo">114</span>    }<a name="line.114"></a>
+<span class="sourceLineNo">115</span><a name="line.115"></a>
+<span class="sourceLineNo">116</span>    /**<a name="line.116"></a>
+<span class="sourceLineNo">117</span>     * Will add a record to the DB<a name="line.117"></a>
+<span class="sourceLineNo">118</span>     * @param strTable The table name<a name="line.118"></a>
+<span class="sourceLineNo">119</span>     * @param strKeyName The Keyname<a name="line.119"></a>
+<span class="sourceLineNo">120</span>     * @param strKeyContents The key contents<a name="line.120"></a>
+<span class="sourceLineNo">121</span>     */<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    public void addRecord(String strTable, String strKeyName, String strKeyContents) {<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        String strSQL = "";<a name="line.123"></a>
+<span class="sourceLineNo">124</span><a name="line.124"></a>
+<span class="sourceLineNo">125</span>        try {<a name="line.125"></a>
+<span class="sourceLineNo">126</span>            // check to see if the record exists<a name="line.126"></a>
+<span class="sourceLineNo">127</span>            dbCmdText = dbConn.createStatement();<a name="line.127"></a>
+<span class="sourceLineNo">128</span>            strSQL = "SELECT * FROM " + strTable + " WHERE " +<a name="line.128"></a>
+<span class="sourceLineNo">129</span>                    strKeyName + "='" + strKeyContents + "'";<a name="line.129"></a>
+<span class="sourceLineNo">130</span>            query(strSQL);<a name="line.130"></a>
+<span class="sourceLineNo">131</span>            if (!moreRecords()) {<a name="line.131"></a>
+<span class="sourceLineNo">132</span>                // the record does not exist, therefore needs to be added to the table<a name="line.132"></a>
+<span class="sourceLineNo">133</span>                strSQL = "INSERT INTO " + strTable + " (" + strKeyName +<a name="line.133"></a>
+<span class="sourceLineNo">134</span>                        ") VALUES ('" + strKeyContents + "')";<a name="line.134"></a>
+<span class="sourceLineNo">135</span>                execute(strSQL);<a name="line.135"></a>
+<span class="sourceLineNo">136</span>                status("Record added");<a name="line.136"></a>
+<span class="sourceLineNo">137</span><a name="line.137"></a>
+<span class="sourceLineNo">138</span>            } else {<a name="line.138"></a>
+<span class="sourceLineNo">139</span>                status("Record NOT added " + strSQL);<a name="line.139"></a>
+<span class="sourceLineNo">140</span>            }<a name="line.140"></a>
+<span class="sourceLineNo">141</span>        } catch (Exception e) {<a name="line.141"></a>
+<span class="sourceLineNo">142</span>            status("SELECT command failed " + strSQL);<a name="line.142"></a>
+<span class="sourceLineNo">143</span>        }<a name="line.143"></a>
+<span class="sourceLineNo">144</span><a name="line.144"></a>
+<span class="sourceLineNo">145</span>    }<a name="line.145"></a>
+<span class="sourceLineNo">146</span><a name="line.146"></a>
+<span class="sourceLineNo">147</span>    /**<a name="line.147"></a>
+<span class="sourceLineNo">148</span>     * Will deleteAll<a name="line.148"></a>
+<span class="sourceLineNo">149</span>     * @param strTable the table<a name="line.149"></a>
+<span class="sourceLineNo">150</span>     */<a name="line.150"></a>
+<span class="sourceLineNo">151</span>    public void deleteAll(String strTable) {<a name="line.151"></a>
+<span class="sourceLineNo">152</span><a name="line.152"></a>
+<span class="sourceLineNo">153</span>    }<a name="line.153"></a>
+<span class="sourceLineNo">154</span><a name="line.154"></a>
+<span class="sourceLineNo">155</span><a name="line.155"></a>
+<span class="sourceLineNo">156</span>    /**<a name="line.156"></a>
+<span class="sourceLineNo">157</span>     * Will get the field<a name="line.157"></a>
+<span class="sourceLineNo">158</span>     * @param strFieldName<a name="line.158"></a>
+<span class="sourceLineNo">159</span>     * @return<a name="line.159"></a>
+<span class="sourceLineNo">160</span>     */<a name="line.160"></a>
+<span class="sourceLineNo">161</span>    public String getField(String strFieldName) {<a name="line.161"></a>
+<span class="sourceLineNo">162</span>        String strRet = "";<a name="line.162"></a>
+<span class="sourceLineNo">163</span>        try {<a name="line.163"></a>
+<span class="sourceLineNo">164</span>            strRet = dbRecordset.getString(strFieldName);<a name="line.164"></a>
+<span class="sourceLineNo">165</span>        } catch (Exception e) {<a name="line.165"></a>
+<span class="sourceLineNo">166</span>        }<a name="line.166"></a>
+<span class="sourceLineNo">167</span>        return strRet;<a name="line.167"></a>
+<span class="sourceLineNo">168</span>    }<a name="line.168"></a>
+<span class="sourceLineNo">169</span><a name="line.169"></a>
+<span class="sourceLineNo">170</span><a name="line.170"></a>
+<span class="sourceLineNo">171</span><a name="line.171"></a>
+<span class="sourceLineNo">172</span>    public int getRecordCount(String strTable) {<a name="line.172"></a>
+<span class="sourceLineNo">173</span>        int intRows = 0;<a name="line.173"></a>
+<span class="sourceLineNo">174</span>        try {<a name="line.174"></a>
+<span class="sourceLineNo">175</span>            dbRecordset.last();<a name="line.175"></a>
+<span class="sourceLineNo">176</span>            intRows = dbRecordset.getRow();<a name="line.176"></a>
+<span class="sourceLineNo">177</span>            dbRecordset.first();<a name="line.177"></a>
+<span class="sourceLineNo">178</span>        } catch (Exception e) {<a name="line.178"></a>
+<span class="sourceLineNo">179</span>            status("problem using getRecordCount");<a name="line.179"></a>
+<span class="sourceLineNo">180</span>        }<a name="line.180"></a>
+<span class="sourceLineNo">181</span>        return intRows;<a name="line.181"></a>
+<span class="sourceLineNo">182</span>    }<a name="line.182"></a>
+<span class="sourceLineNo">183</span><a name="line.183"></a>
+<span class="sourceLineNo">184</span>    public void status(String strMsg) {<a name="line.184"></a>
+<span class="sourceLineNo">185</span>        System.out.println(strMsg);<a name="line.185"></a>
+<span class="sourceLineNo">186</span>    }<a name="line.186"></a>
+<span class="sourceLineNo">187</span><a name="line.187"></a>
+<span class="sourceLineNo">188</span>}<a name="line.188"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

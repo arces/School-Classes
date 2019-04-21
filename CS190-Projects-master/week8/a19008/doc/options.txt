@@ -1,0 +1,19 @@
+-author
+-tag studentid
+-tag email
+-tag assignment.number
+-version
+-tag prgm.usage
+-tag screenprint
+-notree
+-noindex
+-nohelp
+-nodeprecatedlist
+-linksource
+-tag SB
+-tag NewFeature
+-doctitle 'CISC 190 Documentation'
+-windowtitle 'Java Program for Week 08'
+-header 'Program by<br>Dan Janes<br>CISC190 Java'
+-footer 'Fall 2015 - CISC 190<br>Miramar College<br>10440 Black Mtn Road<br>San Diego, CA 92126'
+-bottom '(c) 2015 by John Couture, Email: <a href="mailto:JCouture@sdccd.edu">JCouture@sdccd.edu</a>'

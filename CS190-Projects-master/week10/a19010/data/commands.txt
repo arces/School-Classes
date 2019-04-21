@@ -1,0 +1,4 @@
+CREATE TABLE ROSTER (stuid varchar(7), firstname varchar(30), lastname varchar(30), email varchar(50))
+DROP TABLE ROASTER
+CREATE TABLE GRADES(stuid varchar(7), sem varchar(6), crs varchar(4), fed varchar(20), enrl varchar(20), adddate varchar(20), Q01 varchar(6), A01 varchar(6), Q02 varchar(6), A02 varchar(6), Q03 varchar(6), A03 varchar(6), Q04 varchar(6), A04 varchar(6), Q05 varchar(6), A05 varchar(6), Q06 varchar(6), A06 varchar(6), Q07 varchar(6), A07 varchar(6), Q08 varchar(6), A08 varchar(6), Q09 varchar(6), A09 varchar(6), Q10 varchar(6), A10 varchar(6), Q11 varchar(6), A11 varchar(6), Q12 varchar(6), A12 varchar(6), Q13 varchar(6), A13 varchar(6), Q14 varchar(6), A14 varchar(6), Q15 varchar(6), A15 varchar(6), WTE varchar(8), lastacc varchar(50), total varchar(15))
+DROP TABLE GRADES
